@@ -1,4 +1,4 @@
-// TASK 1 
+//TASK 1 
 class Customer { // defines the customer class
     constructor(name, email) { // initializes properties for the customer
         this.name = name;
