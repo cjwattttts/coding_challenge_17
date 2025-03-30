@@ -39,3 +39,20 @@ class SalesRep { // defines the salesrep class
 const salesRep = new SalesRep('Maxine White'); // creates a sales rep
 salesRep.addClient(customer1); // adds a customer to the sales rep's client list
 console.log(salesRep.getClientTotal('Cam Watts')); // logs total spent by cam watts
+
+//TASK 3
+class VIPCustomer extends Customer { // extends Customer class
+    constructor(name, email, vipLevel) { // initializes properties for VIP customer
+        super(name, email); // calls the parent class constructor
+        this.vipLevel = vipLevel; // assigns VIP level
+    }
+
+    getTotalSpent() { // overrides the getTotalSpent method
+        const totalSpent = super.getTotalSpent(); // calls the parent class method
+        return totalSpent + (totalSpent * 0.1); // adds a 10% bonus
+    }
+}
+
+const vipCustomer = new VIPCustomer('Alice Williams', 'alice@example.com', 'Platinum'); // creates a VIP customer
+vipCustomer.addPurchase(200); // adds a purchase of $200
+console.log(vipCustomer.getTotalSpent()); // logs total spent with 10% bonus (should log 220)
