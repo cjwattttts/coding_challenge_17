@@ -19,7 +19,7 @@ const customer1 = new Customer('Cam Watts', 'camjwatts@yahoo.com'); // creates a
 customer1.addPurchase(500); // adds a purchase of $500
 console.log(customer1.getTotalSpent());
 
-// TASK 2
+//TASK 2
 class SalesRep { // defines the salesrep class
     constructor(name) { // initializes the sales rep with a name
         this.name = name;
