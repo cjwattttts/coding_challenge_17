@@ -40,7 +40,7 @@ const salesRep = new SalesRep('Maxine White'); // creates a sales rep
 salesRep.addClient(customer1); // adds a customer to the sales rep's client list
 console.log(salesRep.getClientTotal('Cam Watts')); // logs total spent by cam watts
 
-//TASK 3
+// TASK 3
 class VIPCustomer extends Customer { // extends Customer class
     constructor(name, email, vipLevel) { // initializes properties for VIP customer
         super(name, email); // calls the parent class constructor
