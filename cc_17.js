@@ -62,7 +62,7 @@ const allCustomers = [customer1, vipCustomer]; // adds customers to the list
 const totalRevenue = allCustomers.reduce((acc, customer) => acc + customer.getTotalSpent(), 0); // calculates total revenue
 console.log('Total Revenue:', totalRevenue); // logs total revenue
 
-const highSpendingCustomers = allCustomers.filter(customer => customer.getTotalSpent() > 500); // filters high-spending customers
+const highSpendingCustomers = allCustomers.filter(customer => customer.getTotalSpent() >= 200); // filters high-spending customers, updated condition
 console.log('High-Spending Customers:', highSpendingCustomers); // logs high-spending customers
 
 const customerSummary = allCustomers.map(customer => ({ // creates an array of customer names and their total spent
