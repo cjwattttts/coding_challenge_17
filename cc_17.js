@@ -57,7 +57,7 @@ const vipCustomer = new VIPCustomer('Alice Williams', 'alice@example.com', 'Plat
 vipCustomer.addPurchase(200); // adds a purchase of $200
 console.log(vipCustomer.getTotalSpent()); // logs total spent with 10% bonus (should log 220)
 
-//TASK 4
+// TASK 4
 const allCustomers = [customer1, vipCustomer]; // adds customers to the list
 const totalRevenue = allCustomers.reduce((acc, customer) => acc + customer.getTotalSpent(), 0); // calculates total revenue
 console.log('Total Revenue:', totalRevenue); // logs total revenue
